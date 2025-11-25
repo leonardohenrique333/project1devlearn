@@ -1,0 +1,450 @@
+/* ONYX PURE THEME */
+
+/* Texto padrão */
+* {
+    color: #dcdcdc;
+}
+*:disabled {
+    color: #7e7e7e;
+}
+
+/******************************************************
+ BACKGROUND GLOBAL — Preto absoluto
+******************************************************/
+QWidget {
+    background-color: #000000;
+}
+
+/******************************************************
+ CORREÇÃO — Elimina TODOS os fundos brancos internos
+******************************************************/
+QAbstractScrollArea,
+QAbstractScrollArea::viewport {
+    background-color: #000000;
+}
+
+QPlainTextEdit, QTextEdit {
+    background-color: #000000;
+    color: #dcdcdc;
+}
+
+QLineEdit {
+    background-color: #000000;
+    color: #dcdcdc;
+    border: 1px solid #2a2a2a;
+}
+
+QHeaderView,
+QHeaderView::section {
+    background-color: #000000;
+    color: #dcdcdc;
+}
+
+QListWidget,
+QListWidget::item {
+    background-color: #000000;
+}
+
+QTreeWidget,
+QTreeWidget::item {
+    background-color: #000000;
+}
+
+QTableView QTableCornerButton::section {
+    background-color: #000000;
+}
+
+QTabWidget::pane {
+    background-color: #000000;
+}
+
+/******************************************************
+ MENUS
+******************************************************/
+QMenu, QMenuBar {
+    background-color: #000000;
+    color: #dcdcdc;
+    border: 1px solid #2a2a2a;
+}
+
+QMenuBar::item,
+QMenu::item {
+    background-color: #000000;
+    color: #dcdcdc;
+    padding: 4px 10px;
+}
+
+QMenuBar::item:hover,
+QMenu::item:hover {
+    background-color: #161616;
+}
+
+/******************************************************
+ LISTAS / TABLES / VIEWS
+******************************************************/
+QColumnView, QListView, QTableView, QTableWidget, QTreeView {
+    background-color: #000000;
+    alternate-background-color: #0d0d0d;
+    border: 1px solid #2a2a2a;
+    selection-background-color: #1a1a1a;
+    gridline-color: #2a2a2a;
+}
+
+QHeaderView::section {
+    background-color: #000000;
+    border-right: 1px solid #2a2a2a;
+    padding-right: -10px;
+}
+QHeaderView::section:last {
+    border-right: 0px;
+}
+
+QHeaderView::section:hover {
+    background-color: #161616;
+}
+
+/******************************************************
+ TABS
+******************************************************/
+QTabWidget::tab-bar {
+    left: 2px;
+}
+
+QTabBar {
+    outline: 0px;
+}
+
+QTabBar::tab {
+    background-color: #0d0d0d;
+    border: 1px solid #2a2a2a;
+    padding: 4px 10px;
+    margin-right: -1px;
+}
+
+QTabBar::tab:hover {
+    background-color: #161616;
+}
+
+QTabBar::tab:selected {
+    background-color: #000000;
+    border-bottom: 0px;
+}
+
+/******************************************************
+ DOCKWIDGET
+******************************************************/
+QDockWidget {
+    background-color: #111111;
+}
+
+/******************************************************
+ BUTTONS
+******************************************************/
+QPushButton, QToolButton {
+    background-color: #0d0d0d;
+    border: 1px solid #2a2a2a;
+    padding: 4px;
+    min-width: 67px;
+}
+
+QPushButton:hover, QToolButton:hover {
+    background-color: #161616;
+}
+
+QPushButton:checked, QToolButton:checked {
+    background-color: #000000;
+}
+
+/******************************************************
+ TOOLBAR
+******************************************************/
+QToolBar {
+    border: 0px;
+    background-color: #000000;
+}
+
+QToolBar QToolButton {
+    border: 0px;
+    padding: 0px;
+    padding-left: 3px;
+    padding-right: 2px;
+    min-width: 50px;
+    background-color: #000000;
+}
+
+QToolBar QToolButton:hover {
+    background-color: #161616;
+}
+
+/******************************************************
+ GROUPBOX
+******************************************************/
+QGroupBox {
+    border: 1px solid #2a2a2a;
+    margin-top: 9px;
+    padding-top: 7px;
+}
+
+QGroupBox::title {
+    padding-left: 9px;
+}
+
+/******************************************************
+ TEXT INPUT
+******************************************************/
+QTextEdit:disabled,
+QLineEdit:disabled {
+    background-color: #1a1a1a;
+}
+
+/******************************************************
+ COMBOBOX
+******************************************************/
+QComboBox {
+    background-color: #0d0d0d;
+    border: 1px solid #2a2a2a;
+    padding: 2px 6px;
+}
+
+QComboBox:hover {
+    background-color: #161616;
+}
+
+QComboBox::drop-down {
+    border: 0px;
+}
+
+/******************************************************
+ SCROLLBARS
+******************************************************/
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #0d0d0d;
+}
+
+QScrollBar::handle:vertical,
+QScrollBar::handle:horizontal {
+    background: #333333;
+}
+
+/******************************************************
+ CHECKBOX / RADIO
+******************************************************/
+QCheckBox::indicator,
+QRadioButton::indicator {
+    background-color: transparent;
+}
+
+/******************************************************
+ SPINBOX / DATE EDIT
+******************************************************/
+QSpinBox, QDateEdit, QDateTimeEdit, QTimeEdit, QDoubleSpinBox {
+    background-color: #000000;
+    border: 1px solid #2a2a2a;
+    padding-right: 15px;
+}
+
+/******************************************************
+ PROGRESSBAR
+******************************************************/
+QProgressBar {
+    background-color: #000000;
+    border: 1px solid #2a2a2a;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #24a806;
+}
+
+/* ===================================================
+   CORREÇÃO DOS CHECKBOX / RADIOBUTTON (DOLPHIN FIX)
+   ===================================================*/
+
+QCheckBox {
+    color: #E0E0E0;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #555;
+    border-radius: 3px;
+    background: #111;
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #777;
+}
+
+QCheckBox::indicator:checked {
+    background: #00AEEF;
+    border: 2px solid #00AEEF;
+}
+
+QCheckBox::indicator:disabled {
+    background: #333;
+    border: 2px solid #444;
+}
+
+QRadioButton {
+    color: #E0E0E0;
+}
+
+QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    border: 2px solid #555;
+    background: #111;
+}
+
+QRadioButton::indicator:checked {
+    background: #00AEEF;
+    border: 2px solid #00AEEF;
+}
+
+/* --- Sliders --- */
+QSlider::groove:horizontal {
+    background: #222;
+    height: 6px;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: #00AEEF;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+}
+
+/* --- Tabs --- */
+QTabWidget::pane {
+    border: 1px solid #222;
+}
+
+QTabBar::tab {
+    background: #111;
+    padding: 6px 14px;
+    border: 1px solid #222;
+    border-bottom: none;
+}
+
+QTabBar::tab:selected {
+    background: #00AEEF;
+    color: #000;
+}
+
+/* =======================================================
+   EFEITO DE ILUMINAÇÃO (HOVER GLOW) – ONYX PURE
+   ======================================================= */
+
+/* Botões */
+QPushButton:hover, QToolButton:hover {
+    background-color: #1a1a1a;
+    border: 1px solid #5dade2; /* azul suave */
+    box-shadow: 0px 0px 8px #5dade2;
+}
+
+/* Itens de Menu */
+QMenu::item:hover,
+QMenuBar::item:hover {
+    background-color: #1a1a1a;
+    border: 1px solid #5dade2;
+    box-shadow: 0px 0px 6px #5dade2;
+}
+
+/* Abas */
+QTabBar::tab:hover {
+    background-color: #1a1a1a;
+    border: 1px solid #5dade2;
+    box-shadow: 0px 0px 8px #5dade2;
+}
+
+/* Linhas de Tabela / Lista / Árvore */
+QListView::item:hover,
+QTreeView::item:hover,
+QTableView::item:hover {
+    background-color: #1a1a1a;
+    border: 1px solid #5dade2;
+    box-shadow: inset 0px 0px 6px #5dade2;
+}
+
+/* Itens internos do ComboBox */
+QComboBox QAbstractItemView::item:hover {
+    background-color: #1a1a1a;
+    border: 1px solid #5dade2;
+    box-shadow: 0px 0px 6px #5dade2;
+}
+/* =======================================================
+   ILUMINAÇÃO EM TODOS OS MENUS (inclui VISUALIZAR)
+   ======================================================= */
+
+/* Barra superior (Arquivo, Emulação, Visualizar, Ferramentas...) */
+QMenuBar::item {
+    padding: 6px 12px;
+    background: transparent;
+    color: #e0e0e0;
+}
+
+QMenuBar::item:selected,
+QMenuBar::item:hover {
+    background-color: #1a1a1a;
+    border: 1px solid #5dade2;
+    box-shadow: 0px 0px 6px #5dade2;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+/* Menu suspenso (submenu) */
+QMenu {
+    background-color: #0a0a0a;
+    border: 1px solid #333;
+    padding: 4px;
+}
+
+/* Cada item dentro dos menus */
+QMenu::item {
+    padding: 6px 18px;
+    background-color: transparent;
+    color: #e0e0e0;
+}
+
+/* Hover das opções internas */
+QMenu::item:selected,
+QMenu::item:hover {
+    background-color: #1a1a1a;
+    border: 1px solid #5dade2;
+    box-shadow: 0px 0px 6px #5dade2;
+    border-radius: 4px;
+    color: white;
+}
+
+/* Submenu seta (→) */
+QMenu::right-arrow {
+    padding: 0px;
+}
+
+/* Hover de itens dentro de um submenu lateral */
+QMenu QMenu::item:hover {
+    background-color: #1a1a1a;
+    border: 1px solid #5dade2;
+    box-shadow: 0px 0px 6px #5dade2;
+    color: white;
+}
+
+/* =======================================================
+   HOTFIX – Restaurar azul nas abas (hover e selecionada)
+   ======================================================= */
+
+QTabBar::tab:hover {
+    background-color: #007bff !important;  /* azul vivo */
+    color: white !important;
+    border: 1px solid #007bff !important;
+}
+
+QTabBar::tab:selected {
+    background-color: #0094ff !important;  /* azul seleção */
+    color: black !important;
+    border: 1px solid #0094ff !important;
+}
+
